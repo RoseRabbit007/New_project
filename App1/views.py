@@ -8,6 +8,8 @@ from rest_framework import status
 
 class add_department(APIView):
     print("vilas")
+    print("sdsdsds")
+    
     def post(self,request):
         serializer= AddDepartmentSerializer(data=request.data)
         if serializer.is_valid():
