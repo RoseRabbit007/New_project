@@ -9,6 +9,7 @@ from rest_framework import status
 class add_department(APIView):
     print("vilas")
     print("sdsdsds")
+    print("done")
     
     def post(self,request):
         serializer= AddDepartmentSerializer(data=request.data)
