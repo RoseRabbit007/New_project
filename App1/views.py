@@ -15,6 +15,7 @@ class WorkShifCreateView(APIView):
         
     def get(self, request, id=None):
         if not id:
+            print("ok")
             return Response({"msg": "Please provide a valid id."}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
